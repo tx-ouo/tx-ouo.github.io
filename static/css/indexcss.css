@@ -47,6 +47,7 @@
 		}
 		.head_0_1 p{
 			display:inline-block;
+			font-size:26px;
 			margin:50px auto auto 10px;
 		}
 		.head_0_2{
@@ -60,12 +61,6 @@
 		.head_0_21{margin-top:18%;}
 		@media screen and (max-width:800px){
 			.head_0_2{display:none;}
-		}
-		@media screen and (max-width:600px){
-			.head_0_1 p{
-				/* text-size-adjust:auto; */
-				font-size: 25px;
-			}
 		}
 		
 		/*顶部结束*/
