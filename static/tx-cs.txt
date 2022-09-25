@@ -1,1 +1,2 @@
 配置：allow-unrelated-histories
+git push -u -f origin master //将本地仓库项目提交到远程仓库
