@@ -61,6 +61,12 @@
 		@media screen and (max-width:800px){
 			.head_0_2{display:none;}
 		}
+		@media screen and (max-width:600px){
+			.head_0_1 p{
+				/* text-size-adjust:auto; */
+				font-size: 25px;
+			}
+		}
 		
 		/*顶部结束*/
 
