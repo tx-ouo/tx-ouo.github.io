@@ -21,7 +21,7 @@
 			height:140px;
 			margin:0;
 			padding:10px 0;
-			font-size:30px;
+			/* font-size:26px; */
 			white-space:nowrap;
 			border:1px solid #cfcccc;
 			background:url(../back-img/20190705.jpg) no-repeat;
@@ -47,7 +47,7 @@
 		}
 		.head_0_1 p{
 			display:inline-block;
-			font-size:26px;
+			font-size:28px;
 			margin:50px auto auto 10px;
 		}
 		.head_0_2{
@@ -187,7 +187,7 @@
 		}
 		.build_1{
 			border:2px solid #cfcccc;			
-			margin:10px 0;	
+			margin:10px 0;
 		}
 		.build_1:hover{cursor:pointer;}
 		.build_10{
@@ -215,7 +215,10 @@
 		.build_1 p{
 			text-indent:2em;
 			width:100%;	
-			color:#1e1d1c;	
+			color:#1e1d1c;
+			display:-webkit-box;
+			-webkit-line-clamp:2;
+			-webkit-box-orient: vertical;	
 			word-wrap:break-word; 
 			word-break:normal;
 			overflow:hidden;
@@ -393,7 +396,8 @@
 			box-shadow: 5px 5px 2px #f04d32;
 			background-color:#fff;
     		color:#f04d32;
-    		transition:background-color 0.1s;
+			transition:background-color 0.1s;
+			transform:scale(1.1);
 		}
     	/*展示结束*/
 

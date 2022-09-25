@@ -31,19 +31,21 @@ $(function(){
 });
 //about_we:end;
 /*
-	lx:start
+	联系页面lx:start
  */
 $(function(){
 	$(".a_01").click(function(){
 		$(this).fadeOut("fast",function(){
 			$(".lx_details1").fadeIn();
 		});
-	});
-	$(".lx_details1").mouseleave(function(){
-		$(this).fadeOut('700',function(){
-			$(".a_01").fadeIn('700');
+		$(".lx_details1").mouseleave(function(){
+			$(this).fadeOut('700',function(){
+				$(".a_01").fadeIn('700');
+			});
 		});
 	});
+	
+	
 	$(".a_02").click(function(){
 		$(this).fadeOut("fast",function(){
 			$(".lx_details2").fadeIn();
