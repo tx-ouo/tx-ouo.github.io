@@ -21,7 +21,7 @@
 			height:140px;
 			margin:0;
 			padding:10px 0;
-			font-size:30px;
+			/* font-size:26px; */
 			white-space:nowrap;
 			border:1px solid #cfcccc;
 			background:url(../back-img/20190705.jpg) no-repeat;
@@ -47,7 +47,7 @@
 		}
 		.head_0_1 p{
 			display:inline-block;
-			font-size:26px;
+			font-size:28px;
 			margin:50px auto auto 10px;
 		}
 		.head_0_2{
