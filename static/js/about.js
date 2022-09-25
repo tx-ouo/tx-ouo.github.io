@@ -1,0 +1,120 @@
+/*
+	about_we:start;
+ */
+$(function(){
+	$("#nav li").click(function(){
+		$(this).css({"color":"#f18a10"});
+		$(this).siblings('li').css({"color":"black"});
+	});
+	$(".ftr1").click(function(){
+		$(".doc_w").load("about_we.html .gsjj",function(){
+			$(".gsjj").css("display","block");
+			$(".tdjs").css("display","none");
+			$(".fzlc").css("display","none");
+		});
+	});
+	$(".ftr2").click(function(){
+		$(".doc_w").load("about_we.html .tdjs",function(){
+			$(".tdjs").css("display","block");
+			$(".gsjj").css("display","none");
+			$(".fzlc").css("display","none");
+		});
+	});
+	$(".ftr3").click(function(){
+		$(".doc_w").load("about_we.html .fzlc",function(){
+			$(".fzlc").css("display","block");
+			$(".gsjj").css("display","none");
+			$(".tdjs").css("display","none");
+		});
+	});
+
+});
+//about_we:end;
+/*
+	lx:start
+ */
+$(function(){
+	$(".a_01").click(function(){
+		$(this).fadeOut("fast",function(){
+			$(".lx_details1").fadeIn();
+		});
+	});
+	$(".lx_details1").mouseleave(function(){
+		$(this).fadeOut('700',function(){
+			$(".a_01").fadeIn('700');
+		});
+	});
+	$(".a_02").click(function(){
+		$(this).fadeOut("fast",function(){
+			$(".lx_details2").fadeIn();
+		});
+	});
+	$(".lx_details2").mouseleave(function(){
+		$(this).fadeOut('700',function(){
+			$(".a_02").fadeIn('700');
+		});
+	});
+	$(".a_03").click(function(){
+		$(this).fadeOut("fast",function(){
+			$(".lx_details3").fadeIn();
+		});
+	});
+	$(".lx_details3").mouseleave(function(){
+		$(this).fadeOut('700',function(){
+			$(".a_03").fadeIn('700');
+		});
+	});
+	$(".a_04").click(function(){
+		$(this).fadeOut("fast",function(){
+			$(".lx_details4").fadeIn();
+		});
+	});
+	$(".lx_details4").mouseleave(function(){
+		$(this).fadeOut('700',function(){
+			$(".a_04").fadeIn('700');
+		});
+	});
+	$(".a_05").click(function(){
+		$(this).fadeOut("fast",function(){
+			$(".lx_details5").fadeIn();
+		});
+	});
+	$(".lx_details5").mouseleave(function(){
+		$(this).fadeOut('700',function(){
+			$(".a_05").fadeIn('700');
+		});
+	});
+	$(".a_06").click(function(){
+		$(this).fadeOut("fast",function(){
+			$(".lx_details6").fadeIn();
+		});
+	});
+	$(".lx_details6").mouseleave(function(){
+		$(this).fadeOut('700',function(){
+			$(".a_06").fadeIn('700');
+		});
+	});
+	$(".a_07").click(function(){
+		$(this).fadeOut("fast",function(){
+			$(".lx_details7").fadeIn();
+		});
+	});
+	$(".lx_details7").mouseleave(function(){
+		$(this).fadeOut('700',function(){
+			$(".a_07").fadeIn('700');
+		});
+	});
+	$(".a_08").click(function(){
+		$(this).fadeOut("fast",function(){
+			$(".lx_details8").fadeIn();
+		});
+	});
+	$(".lx_details8").mouseleave(function(){
+		$(this).fadeOut('700',function(){
+			$(".a_08").fadeIn('700');
+		});
+	});
+});
+/*
+	lx:end;
+ */
