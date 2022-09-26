@@ -1,2 +1,17 @@
-配置：allow-unrelated-histories
-git push -u -f origin master //将本地仓库项目提交到远程仓库
+[
+    {
+        "userId":1,
+        "userName":"天成队",
+        "userNum":"5人",
+        "userAddress":"沈阳",
+        "userstuts":"已派遣"
+    },
+    {
+        "userId":2,
+        "userName":"地工队",
+        "userNum":"10人",
+        "userAddress":"武汉",
+        "userstuts":"已派遣"
+    }
+
+]
