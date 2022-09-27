@@ -9,23 +9,42 @@
     <link href="../static/css/lwshigong.css" rel='stylesheet' type='text/css'>
     <script src="../static/js/jquery-3.3.1.min.js"></script>
     <script src="../static/js/indexhead_1ajax.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="../static/js/vue.js"></script> -->
 
 </head>
 <body>
     <div id="head_pq1">
         <h2 style="margin:0;padding:5px 0;"><a href="../index.html" style="color:#f18a10;">返回</a></h2>
         <div class="head_top">
-            <button type="button" class="btn0">查询</button>
-            <button type="button" class="btn1">查询1</button>
-            <div class="sj" style="border:1px solid green;height:50px;width:auto;">
-
+            <div class="btn_0">
+                <button type="button" class="btn0" style="float:none;">查询队名</button>         
+                <button type="button" class="btn1" style="float:none;">全局查询</button>
+                <button type="button" class="btn2" style="float:right;">清空</button>
             </div>
+            <div class="sj" >
+            </div>
+            <div id="root">
+                <h3>66666-{{name}}-{{address}}</h3>   
+                <!-- <h3><a v-bind:href="url">返回</a></h3> -->
+                修改队名：<input type="text" v-model:value="name">
+                <h4>时间：{{ nowTime }}</h4>
+            </div>
+        </div>
+       
+    </div>
+    <div id="zhong">
+        <div class="lable_1">
+
         </div>
 
     </div>
-    <script>
-    
-    </script>
- 
+
+
+    <div class="bottoms container-fluid">
+        <div class="bot_p">
+            <p>江西南昌工程公司.CN All Rights Reserved</p>
+        </div>
+    </div>
 </body>
 </html>
