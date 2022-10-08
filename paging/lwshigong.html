@@ -14,27 +14,46 @@
 
 </head>
 <body>
-    <div id="head_pq1">
-        <h2 style="margin:0;padding:5px 0;"><a href="../index.html" style="color:#f18a10;">返回</a></h2>
-        <div class="head_top">
+    <h2 style="margin:0;padding:5px 0;"><a href="../index.html" style="color:#f18a10;">返回</a></h2>
+    <div class="nav">
+        <ul>
+            <li class="nav_t1">劳务派遣</li>
+            <li class="nav_t2">建筑承包</li>
+            <li class="nav_t3">建筑施工</li>
+            <li class="nav_t4">资质认证</li>
+            <div class="nav-box"></div>
+        </ul>
+    </div>
+    <div id="head_top">
+        <div class="head_top_lwpq">
             <div class="btn_0">
                 <button type="button" class="btn0" style="float:none;">查询队名</button>         
                 <button type="button" class="btn1" style="float:none;">全局查询</button>
                 <button type="button" class="btn2" style="float:right;">清空</button>
             </div>
             <div class="sj" >
-            </div>
+            </div>  
+        </div>
+        <div class="head_top_jzcb">
+
+        </div>
+        <div class="head_top_jzsg">
+
+        </div>
+        <div class="head_top_zzrz">
+
+        </div>
+        
+       
+    </div>
+    <div id="zhong">
+        <div class="lable_1">
             <div id="root">
                 <h3>66666-{{name}}-{{address}}</h3>   
                 <!-- <h3><a v-bind:href="url">返回</a></h3> -->
                 修改队名：<input type="text" v-model:value="name">
                 <h4>时间：{{ nowTime }}</h4>
             </div>
-        </div>
-       
-    </div>
-    <div id="zhong">
-        <div class="lable_1">
 
         </div>
 

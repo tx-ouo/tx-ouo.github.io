@@ -1,4 +1,44 @@
 $(function(){
+    $(".nav li").click(function(){
+        $(this).css({"color":"#f18a10"});
+        $(this).siblings('li').css({"color":"black"});  
+    });
+    $(".nav_t1").click(function(){
+		$("#head_top").load("lwshigong.html .head_top_lwpq",function(){
+			$(".head_top_lwqp").css("display","block");
+			$(".head_top_jzcb").css("display","none");
+            $(".head_top_jzsg").css("display","none");
+            $(".head_top_zzrz").css("display","none");
+		});
+	});
+    $(".nav_t2").click(function(){
+		$("#head_top").load("lwshigong.html .head_top_jzcb",function(){		
+            $(".head_top_lwpq").css("display","none");
+            $(".head_top_jzcb").css("display","block");
+            $(".head_top_jzsg").css("display","none");
+            $(".head_top_zzrz").css("display","none");
+		});
+    });
+    $(".nav_t3").click(function(){
+		$("#head_top").load("lwshigong.html .head_top_jzsg",function(){		
+            $(".head_top_lwpq").css("display","none");
+            $(".head_top_jzcb").css("display","none");
+            $(".head_top_jzsg").css("display","block");
+            $(".head_top_zzrz").css("display","none");
+		});
+    });
+    $(".nav_t4").click(function(){
+		$("#head_top").load("lwshigong.html .head_top_zzrz",function(){		
+            $(".head_top_lwpq").css("display","none");
+            $(".head_top_jzcb").css("display","none");
+            $(".head_top_jzsg").css("display","none");
+            $(".head_top_zzrz").css("display","block");
+		});
+	});
+});
+
+
+$(function(){
     $(".btn0").click(function(){
         $.ajax({
             type:"get",
@@ -81,9 +121,7 @@ $(function(){
         //在mounted钩子函数中调用nowTimes函数 
         mounted(){
             this.getTime()
-        },
-  
-     
+        },    
     });
     // v.$mount('#root');
 

@@ -12,6 +12,13 @@
         "userNum":"10人",
         "userAddress":"武汉",
         "userstuts":"已派遣"
+    },
+     {
+        "userId":3,
+        "userName":"新工队",
+        "userNum":"8人",
+        "userAddress":"贵阳",
+        "userstuts":"已完成"
     }
 
 ]
