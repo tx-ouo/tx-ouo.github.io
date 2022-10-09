@@ -5,10 +5,8 @@ $(function(){
     });
     $(".nav_t1").click(function(){
 		$("#head_top").load("lwshigong.html .head_top_lwpq",function(){
-			$(".head_top_lwqp").css("display","block");
-			$(".head_top_jzcb").css("display","none");
-            $(".head_top_jzsg").css("display","none");
-            $(".head_top_zzrz").css("display","none");
+            $(".head_top_lwqp").css("display","inline-block");
+            $(".head_top_lwqp").siblings().css("display","none");
 		});
 	});
     $(".nav_t2").click(function(){
@@ -36,40 +34,38 @@ $(function(){
 		});
 	});
 });
-
-
 $(function(){
-    $(".btn0").click(function(){
-        $.ajax({
-            type:"get",
-            url:"../static/tx-cs.txt",
-            async:true,
-            data:{ 
-            },
-            //要服务器返回json形式数据
-            dataType:"json",
-            // contentType:'',
-            //a=内容
-            success:function(a){
-                console.log(a);
-                // var obj =JSON.parse(a);
-                // console.log(obj);
-                var op=$("<li></li>");
-                a.forEach(i => {
-                    var li="<li>"+i.userName+"</li>";
-                    op.append(li);
-                });
-                $(".sj").append(op);
-            },
-            error:function(b){
-                alert("失败");
-            }
-        });      
-    }); 
-});
-$(function(){
-    $(".btn1").click(function(){
-        // alert("6666");
+    $(document).on("click",".btn0",function(){
+        if($(".head_top_lwpq").css('display')!=='none'){
+            $.ajax({
+                type:"get",
+                url:"../static/tx-cs.txt",
+                async:true,
+                data:{ 
+                },
+                //要服务器返回json形式数据
+                dataType:"json",
+                // contentType:'',
+                //a=内容
+                success:function(a){
+                    console.log(a);
+                    // var obj =JSON.parse(a);
+                    // console.log(obj);
+                    var op=$("<li></li>");
+                    a.forEach(i => {
+                        var li="<li>"+i.userName+"</li>";
+                        op.append(li);
+                    });
+                    $(".sj").append(op);
+                },
+                error:function(b){
+                    alert("失败");
+                }
+            }); 
+        }       
+    });
+
+    $(document).on("click",".btn1",function(){
         $.get("../static/tx-cs.txt",{},function(c){
             var obj =JSON.parse(c)
             var po=$("<li></li>");
@@ -82,7 +78,7 @@ $(function(){
     });
 
     //清空按钮
-    $(".btn2").click(function(){  
+    $(document).on("click",".btn2",function(){  
         //清空所有
        // $(".sj").html('');
 

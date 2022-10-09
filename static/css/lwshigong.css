@@ -57,7 +57,7 @@ li{
 
 .head_top_lwpq{
     border:1px solid red;
-    height: 400px;
+    min-height: 400px;
     width:100%;
 }
 .btn_0{
@@ -65,7 +65,7 @@ li{
     /* position: relative; */
     height:auto;
     margin:5px auto;
-    border:3px solid black;
+    border:3px solid rgb(233, 129, 10);
 }
 .sj{
     border:1px solid green;
