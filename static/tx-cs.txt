@@ -3,6 +3,7 @@
         "userId":1,
         "userName":"天成队",
         "userNum":"5人",
+        "entryTime":"2018-08-08",
         "userAddress":"沈阳",
         "userstuts":"已派遣"
     },
@@ -10,6 +11,7 @@
         "userId":2,
         "userName":"地工队",
         "userNum":"10人",
+        "entryTime":"2018-08-08",
         "userAddress":"武汉",
         "userstuts":"已派遣"
     },
@@ -17,6 +19,71 @@
         "userId":3,
         "userName":"新工队",
         "userNum":"8人",
+        "entryTime":"2018-08-08",
+        "userAddress":"贵阳",
+        "userstuts":"已完成"
+    },
+    {
+        "userId":3,
+        "userName":"新工队",
+        "userNum":"8人",
+        "entryTime":"2018-08-08",
+        "userAddress":"贵阳",
+        "userstuts":"已完成"
+    },
+    {
+        "userId":3,
+        "userName":"新工队",
+        "userNum":"8人",
+        "entryTime":"2018-08-08",
+        "userAddress":"贵阳",
+        "userstuts":"已完成"
+    },
+    {
+        "userId":3,
+        "userName":"新工队",
+        "userNum":"8人",
+        "entryTime":"2018-08-08",
+        "userAddress":"贵阳",
+        "userstuts":"已完成"
+    },
+    {
+        "userId":3,
+        "userName":"新工队",
+        "userNum":"8人",
+        "entryTime":"2018-08-08",
+        "userAddress":"贵阳",
+        "userstuts":"已完成"
+    },
+    {
+        "userId":3,
+        "userName":"新工队",
+        "userNum":"8人",
+        "entryTime":"2018-08-08",
+        "userAddress":"贵阳",
+        "userstuts":"已完成"
+    },
+    {
+        "userId":8,
+        "userName":"新工队",
+        "userNum":"8人",
+        "entryTime":"2018-10-08",
+        "userAddress":"贵阳",
+        "userstuts":"已完成"
+    },
+    {
+        "userId":3,
+        "userName":"新工队",
+        "userNum":"8人",
+        "entryTime":"2018-08-08",
+        "userAddress":"贵阳",
+        "userstuts":"已完成"
+    },
+    {
+        "userId":8,
+        "userName":"新工队",
+        "userNum":"8人",
+        "entryTime":"2018-10-08",
         "userAddress":"贵阳",
         "userstuts":"已完成"
     }

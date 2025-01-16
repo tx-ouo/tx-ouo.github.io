@@ -3,24 +3,25 @@
 <head>
     <title>劳务派遣</title>
     <meta name="viewport" charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="icon" href="../static/image/logo0.jpg" type="image/x-icon"/>
     <link href="../static/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
     <link href="../static/css/lwshigong.css" rel='stylesheet' type='text/css'>
     <script src="../static/js/jquery-3.3.1.min.js"></script>
     <script src="../static/js/indexhead_1ajax.js"></script>
+     <!-- Vue.js v2.7.16-->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <!-- <script src="../static/js/vue.js"></script> -->
+   
 
 </head>
 <body>
     <h2 style="margin:0;padding:5px 0;"><a href="../index.html" style="color:#f18a10;">返回</a></h2>
     <div class="nav">
         <ul>
-            <li class="nav_t1">劳务派遣</li>
-            <li class="nav_t2">建筑承包</li>
-            <li class="nav_t3">建筑施工</li>
-            <li class="nav_t4">资质认证</li>
+            <li class="nav_t1" data-target="head_top_lwpq">劳务派遣</li>
+            <li class="nav_t2" data-target="head_top_jzcb">建筑承包</li>
+            <li class="nav_t3" data-target="head_top_jzsg">建筑施工</li>
+            <li class="nav_t4" data-target="head_top_zzrz">资质认证</li>
             <div class="nav-box"></div>
         </ul>
     </div>
@@ -31,20 +32,28 @@
                 <button type="button" class="btn1">全局查询</button>
                 <button type="button" class="btn2" style="float:right;">清空</button>
             </div>
-            <div class="sj" >
-            </div>  
+            <div class="table_lwpq" >
+            </div>
+            <div class="table_paging">
+                <div class="paging_box">
+                    <button type="button" class="paging_btn">上一页</button>
+                    <!-- 添加跳转输入框和确认按钮 -->
+                    <input type="number" id="pageInput" placeholder="页码">
+                    <button type="button" class="paging_btn" id="goToPage">确认</button>
+                    <button type="button" class="paging_btn">下一页</button>
+                </div>
+            </div> 
         </div>
         <div class="head_top_jzcb">
+            <div class="btn_1">666</div>
 
         </div>
         <div class="head_top_jzsg">
-
+            <div class="btn_2">666</div>
         </div>
         <div class="head_top_zzrz">
-
+            <div class="btn_3">666</div>
         </div>
-        
-       
     </div>
     <div id="zhong">
         <div class="lable_1">
@@ -65,5 +74,3 @@
             <p>江西南昌工程公司.CN All Rights Reserved</p>
         </div>
     </div>
-</body>
-</html>

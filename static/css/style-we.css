@@ -277,8 +277,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  /* box-shadow: 0 0 0 4px rgb(173, 105, 105), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); */
-  box-shadow: 0 0 0 4px rgb(173, 105, 105), inset 0 2px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 0 4px #f18a10, inset 0 2px 0 rgba(0, 0, 0, 0.08);
 }
 .cd-timeline-img img {
   display: block;
@@ -326,8 +325,8 @@
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 #d29e7e;
-  /*#d7e4ed*/
-  background-color:#da7030;
+  background-color: #f1f1f1; /* 修改: 更改背景颜色 */
+  border: 1px solid #ddd; /* 新增: 添加边框 */
 }
 .cd-timeline-content:after {
   content: "";
@@ -336,9 +335,11 @@
 }
 .cd-timeline-content h2 {
   color: #303e49;
+  font-size: 18px; /* 修改: 调整字体大小 */
+    margin-bottom: 10px; /* 新增: 增加底部间距 */
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-  font-size: 13px;
+  font-size: 14px;
   /*font-size: 0.8125rem;*/
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
@@ -347,7 +348,7 @@
 .cd-timeline-content p {
   margin: 1em 0;
   line-height: 1.6;
-  color:#fff;
+  color:#333;
 }
 .cd-timeline-content .cd-read-more {
   float: right;
@@ -357,13 +358,15 @@
   border-radius: 0.25em;
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
-  background-color: #bac4cb;  
+  background-color: #e07a00;  
 }
 a.cd-read-more:hover{text-decoration:none; background-color: #424242;  }
 .cd-timeline-content .cd-date {
   float: left;
   padding: .8em 0;
   opacity: .7;
+  font-size: 14px; /* 修改: 调整字体大小 */
+  color: #666; /* 修改: 更改文字颜色 */
 }
 .cd-timeline-content::before {
   content: '';

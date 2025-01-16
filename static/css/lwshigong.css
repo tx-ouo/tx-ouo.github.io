@@ -13,20 +13,30 @@ li{
     border-radius: 5px;
     margin: 0 auto 15px auto;
 }
-.nav ul{
-    width:100%;
-    height:100%;
-    display: flex;
+.nav ul {
+    list-style-type: none;
     padding: 0;
-    margin: 3px 0 0 0;   
+    margin: 0;
+    display: flex;
+    background-color: #333;
+    
 }
-.nav li{
-    font:10 20px '优设标题黑';
+
+.nav ul li {
+    color: white;
+    padding: 15px 20px;
+    cursor: pointer;
     width: 100%;
+    transition: background-color 0.3s;
 }
-.nav li:hover{
-    color:#f18a10 !important;
-    cursor:pointer;
+
+.nav ul li:hover {
+    background-color: #575757;
+}
+
+.nav ul li.active {
+    background-color: #f18a10;
+    color: white;
 }
 .nav ul .nav-box{
     position:absolute;
@@ -55,7 +65,8 @@ li{
 }
 
 
-.head_top_lwpq{
+.head_top_lwpq,.head_top_jzcb,.head_top_jzsg,.head_top_zzrz
+{
     border:1px solid red;
     min-height: 400px;
     width:100%;
@@ -65,14 +76,106 @@ li{
     /* position: relative; */
     height:auto;
     margin:5px auto;
-    border:3px solid rgb(233, 129, 10);
+    border-bottom:3px solid rgb(233, 129, 10);
 }
-.sj{
-    border:1px solid green;
-    height:auto;
-    min-height:30px;
-    width:80%;
-    margin:50px auto;
+/* 美化按钮样式 */
+.btn_0 button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #f18a10;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn_0 button:hover {
+    background-color: #d9780f;
+}
+.table_lwpq{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table_lwpq table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table_lwpq th, .table_lwpq td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.table_lwpq td:first-child{
+    text-align: left;
+}
+
+.table_lwpq th {
+    background-color: #f18a10;
+    color: white;
+}
+
+.table_lwpq tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table_lwpq tr:hover {
+    background-color: #ddd;
+}
+
+.action-buttons button {
+    margin: 2px 2px;
+    padding: 5px 10px;
+    background-color: #f18a10;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.table_lwpq .action-buttons button:hover {
+    background-color: #d9780f;
+}
+.table_paging {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.paging_box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.paging_btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.paging_btn:hover {
+    background-color: #0056b3;
+}
+
+#pageInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50px;
+    text-align: center;
 }
 
 .head_top_jzcb{

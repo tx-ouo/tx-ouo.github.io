@@ -19,55 +19,75 @@ body{}
 }
 
 /* 联系方式 */
-.lx_fs{
-	height:470px;
+.lx_fs {
+    height:470px;
+    background-color: #f9f9f9; /* 更浅的背景色 */
+    border: 1px solid #ddd; /* 更浅的边框色 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    padding: 30px; 
+    margin: 20px 0;
 }
-@media screen and (max-width:990px){
-	.lx_fs{height:600px;}
+
+@media screen and (max-width: 990px) {
+    .lx_fs {
+        height: auto;
+        padding: 20px; /* 在小屏幕上减少内边距 */
+    }
 }
-.lx_fs > div{
-	margin:20px 0;
+
+.lx_fs > div {
+    margin: 15px 0; /* 减少子元素的外边距 */
 }
-.a_0{
-	width:100%;
-	height:100%;
-	display:block;
-	text-align:center;
-	color:#fff;
-	border:1px solid #d5d0cf;
-	background-color:#d5d0cf;
+
+.a_0 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    color: #333; /* 更深的文字颜色 */
+    border: 1px solid #ddd; /* 更浅的边框色 */
+    background-color: #fff; /* 白色背景 */
+    border-radius: 5px; /* 圆角 */
+    transition: all 0.3s ease; /* 添加过渡效果 */
 }
-.a_0:hover{
-	color:#de7b06;
-	cursor:pointer;
-	border-radius:7px;
-	box-shadow:2px 4px 8px #c3620b;
+
+.a_0:hover {
+    color: #de7b06;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 2px 4px 8px rgba(195, 98, 11, 0.3); /* 更柔和的阴影 */
 }
-.lx_fs p{
-	display:inline-block;
-	vertical-align:middle;
-	margin:0;
-	font-size:20px;
+
+.lx_fs p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 22px; /* 增大字体 */
+    color: #555; /* 更深的文字颜色 */
 }
-.lx_logo{
-	font-size:30px;
-	margin:20px 0;
-	display:inline-block;
-	vertical-align:middle;	
+
+.lx_logo {
+    font-size: 32px; /* 增大字体 */
+    margin: 20px 0;
+    display: inline-block;
+    vertical-align: middle;
+    color: #de7b06; /* 更亮的文字颜色 */
 }
-.lx_details{
-	width:100%;
-	height:100%;
-	color:#de7b06;
-	padding:20px 0;
-	font-size:30px;
-	vertical-align:middle;
-	text-align:center;
-	display:none;
-	border:1px solid #d5d0cf;
-	background-color:#d5d0cf;
-	border-radius:7px;
-	box-shadow:2px 4px 8px #c3620b;
+
+.lx_details {
+    width: 100%;
+    height: 100%;
+    color: #333; /* 更深的文字颜色 */
+    padding: 20px 0;
+    font-size: 24px; /* 增大字体 */
+    vertical-align: middle;
+    text-align: center;
+    display: none;
+    border: 1px solid #ddd; /* 更浅的边框色 */
+    background-color: #fff; /* 白色背景 */
+    border-radius: 7px; /* 圆角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 阴影效果 */
 }
 .glyphicon{
 	line-height:0!important;

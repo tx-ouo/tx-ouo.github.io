@@ -69,36 +69,47 @@
 		.head_1{
 			width:auto;
 			height:auto;		
-			color:rgb(236, 92, 25);
 			font-size:22px;
 			text-align:center;
+			padding: 10px 0; /* 增加内边距 */
 		}
 		.head_1 ul{			
 			text-align:center;
-			background-color:#efeae8;			
+			background-color:#f7f3e3;
 			height:auto;
 			padding:0 30px;
-			margin:auto;
-			width:auto;			
+			list-style-type: none; /* 去掉默认的列表样式 */
+			margin: 0;
+			padding: 0;
+			display: flex; /* 使用flex布局 */
+			justify-content: center; /* 水平居中 */		
 		}
-		.head_1 li{						
-			/*border:1px solid black;*/
+		.head_1 li{									
 			padding:0 10px;
-			margin:15px 40px 15px 40px;
 			display:inline-block;	
+			margin: 20px 15px; /* 增加每个导航项之间的间距 */
 			
-		}
-		.head_1 span{font-size:13px;}		
+		}	
 		.head_1 li:hover{
 			border-color:#f18a10;
 			cursor:pointer;
 			color:#f18a10;
 			font-weight: 50px;
-			border-radius: 15px;
+			scale: 1.2;
 			box-shadow:4px 4px 5px #fc9331;
 		}
-		.head_1 a{color:rgb(236, 92, 25);}
-		.head_1 a:hover{color:#f18a10;}
+		.head_1 a{
+			color:rgb(236, 92, 25);
+    		text-decoration: none; /* 去掉下划线 */
+    		font-size: 20px; /* 设置字体大小 */
+    		transition: color 0.3s ease; /* 添加过渡效果 */
+			letter-spacing: 2px;
+		}
+		.head_1 a:hover{
+			color:#f18a10;
+			/* color: #f38567; 悬停时改变字体颜色 */
+		}
+
 		@media screen and (max-width:1360px){
 			.head_1 li{margin:15px 28px;}
 		}
